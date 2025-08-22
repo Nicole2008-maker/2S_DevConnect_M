@@ -1,0 +1,44 @@
+/*1 forma de utilizar uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/*2 forma de utilizar uma fonte*/
+@font-face{
+    font-family: Billabong;
+    src: url(../assets/fonts/Billabong/billabong.ttf),
+    url(../assets/fonts/Billabong/billabong_regular.otf);
+}
+
+/*Variaveis*/
+:root{
+ --cor-vinho: #AB2003;
+ --cor-areia: #FFFFE0;
+ --cor-verde: #CECCB1;
+ --cor-salmão: #FE6F5E;
+ --cor-lilas: #D4D4FF;
+ --borda: 1px solid, var(--cor-lilas);
+ --borda-arredondada: 2px;
+
+
+ --tamanho-fonte-lg: 20px;
+ --tamanho-fonte-md: 16px;
+ --tamanho-fonte-sm: 14px;
+}
+
+/*SELETOR GLOBAL*/
+*{
+ padding: 0; /*espaço interno*/
+ margin: 0; /*espaço externo*/
+ box-sizing: border-box; /*atribui ou nao espacos internos/externos e bodas no tamanho final do box*/
+ font-family: "Roboto Condensed", sans-serif;
+
+}
+
+body{
+background-color: var(--cor-lilas);
+}
+
+h1{
+    position: absolute;/*altera a posicao do elemento*/
+    z-index: -1;/*camadas ao elemento*/
+    opacity: 0;/*opacidade*/
+}
