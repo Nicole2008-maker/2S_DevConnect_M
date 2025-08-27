@@ -1,0 +1,89 @@
+main {
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
+}
+
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+
+}
+
+.formulario-botao-azul {
+    width: 100%;
+}
+
+form>p {
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: rgb(255, 255, 255);
+}
+
+form>a,
+#secao-cadastro>p>a {
+    color: var(--cor-verde);
+    font-size: var(--tamanho-fonte-sm);
+    text-decoration: none;
+
+}
+
+#secao-cadastro>p {
+    color: rgb(0, 0, 0);
+    font-size: var(--tamanho-fonte-md);
+}
+
+#secao-cadastro {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+.estilo-formulario {
+    max-width: 342px;
+    background-color: rgb(152, 107, 194);
+    border: var(--borda);
+    width: 100%;
+}
+
+main>div>p {
+    background-color: rgb(255, 255, 255);
+    color: rgb(108, 35, 175);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+#campo-file{
+    display: none;
+}
+#labell{
+    display: inline-block;
+    width: 260px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(123, 76, 167);
+    text-align: center;
+    padding: 10px;
+}

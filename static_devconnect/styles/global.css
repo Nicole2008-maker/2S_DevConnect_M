@@ -42,3 +42,30 @@ h1{
     z-index: -1;/*camadas ao elemento*/
     opacity: 0;/*opacidade*/
 }
+
+/*FOrmulario*/
+.formulario-botao-azul{
+    background-color: var(--cor-lilas);
+    border-radius: var(--borda-arredondada);
+    border: none;
+    height: 35px;
+    
+    color:var(--cor-areia);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-campos > input{
+border: var(--borda);
+height: 35px;
+background-color: var(--cor-areia);
+
+color: var(--cor-vinho);
+font-size: var(--tamanho-fonte-sm);
+border-radius: var(--borda-arredondada);
+}
+
+.formulario-campos > label{
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-lilas);
+    font-weight: 600;
+}
