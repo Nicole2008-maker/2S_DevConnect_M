@@ -2,70 +2,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /*2 forma de utilizar uma fonte*/
-@font-face{
+@font-face {
     font-family: Billabong;
     src: url(../assets/fonts/Billabong/billabong.ttf),
-    url(../assets/fonts/Billabong/billabong_regular.otf);
+        url(../assets/fonts/Billabong/billabong_regular.otf);
 }
 
 /*Variaveis*/
-:root{
- --cor-vinho: #AB2003;
- --cor-areia: #FFFFE0;
- --cor-verde: #CECCB1;
- --cor-salmão: #FE6F5E;
- --cor-lilas: #D4D4FF;
- --borda: 1px solid, var(--cor-lilas);
- --borda-arredondada: 2px;
+:root {
+    --cor-vinho: #AB2003;
+    --cor-areia: #FFFFE0;
+    --cor-verde: #CECCB1;
+    --cor-salmão: #FE6F5E;
+    --cor-lilas: #D4D4FF;
+    --cor-preta: #000000;
+    --borda: 1px solid, var(--cor-lilas);
+    --borda-arredondada: 2px;
 
 
- --tamanho-fonte-lg: 20px;
- --tamanho-fonte-md: 16px;
- --tamanho-fonte-sm: 14px;
+    --tamanho-fonte-lg: 20px;
+    --tamanho-fonte-md: 16px;
+    --tamanho-fonte-sm: 14px;
 }
 
 /*SELETOR GLOBAL*/
-*{
- padding: 0; /*espaço interno*/
- margin: 0; /*espaço externo*/
- box-sizing: border-box; /*atribui ou nao espacos internos/externos e bodas no tamanho final do box*/
- font-family: "Roboto Condensed", sans-serif;
+* {
+    padding: 0;
+    /*espaço interno*/
+    margin: 0;
+    /*espaço externo*/
+    box-sizing: border-box;
+    /*atribui ou nao espacos internos/externos e bodas no tamanho final do box*/
+    font-family: "Roboto Condensed", sans-serif;
 
 }
 
-body{
-background-color: var(--cor-lilas);
+body {
+    background-color: var(--cor-lilas);
 }
 
-h1{
-    position: absolute;/*altera a posicao do elemento*/
-    z-index: -1;/*camadas ao elemento*/
-    opacity: 0;/*opacidade*/
+h1 {
+    position: absolute;
+    /*altera a posicao do elemento*/
+    z-index: -1;
+    /*camadas ao elemento*/
+    opacity: 0;
+    /*opacidade*/
 }
 
 /*FOrmulario*/
-.formulario-botao-azul{
+.formulario-botao-azul {
     background-color: var(--cor-lilas);
     border-radius: var(--borda-arredondada);
     border: none;
     height: 35px;
-    
-    color:var(--cor-areia);
+
+    color: var(--cor-areia);
     font-size: var(--tamanho-fonte-sm);
 }
 
-.formulario-campos > input{
-border: var(--borda);
-height: 35px;
-background-color: var(--cor-areia);
+.formulario-campos>input {
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-areia);
 
-color: var(--cor-vinho);
-font-size: var(--tamanho-fonte-sm);
-border-radius: var(--borda-arredondada);
+    color: var(--cor-vinho);
+    font-size: var(--tamanho-fonte-sm);
+    border-radius: var(--borda-arredondada);
 }
 
-.formulario-campos > label{
+.formulario-campos>label {
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-lilas);
     font-weight: 600;
 }
+
+.estilo-formulario{
+    background-color: rgb(152, 107, 194);
+    border: var(--borda);
+    width: 100%;
+}
+
+#campo-file {
+    display: none;
+}
+
+#labell {
+    display: inline-block;
+    width: 260px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(123, 76, 167);
+    text-align: center;
+    padding: 10px;
+}
+
+/* cabecalho */
+#cabecalho {
+    background-color: #cba0d7;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border-bottom: var(--cor-preta);
+}
+
+#cabecalho>nav {
+    width: 85%;
+    max-width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Logo-mobile {
+    display: none;
+}
+
+.cabecalho-acoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cabecalho-acoes>a {
+    display: flex;
+    align-items: center;
+
+}
+
+#foto-perfil {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    /*mantem a proporcao com um zoom para adaptar ao tamanho do elemento*/
+    object-position: center;
+    border-radius: 50%;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+.logotipo {
+    width: 90px;
+    height: 90px;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 500px) {
+    #Logo-mobile {
+        display: initial;
+    }
+
+    #logo-desktop {
+        display: none;
+    }
+}
+

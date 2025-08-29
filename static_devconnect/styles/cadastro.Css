@@ -75,15 +75,3 @@ main>div>p {
     color: rgb(108, 35, 175);
     font-size: var(--tamanho-fonte-sm);
 }
-
-#campo-file{
-    display: none;
-}
-#labell{
-    display: inline-block;
-    width: 260px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(123, 76, 167);
-    text-align: center;
-    padding: 10px;
-}

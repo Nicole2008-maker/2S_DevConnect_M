@@ -66,9 +66,6 @@ font-size: var(--tamanho-fonte-md);
 
 .estilo-formulario{
     max-width: 342px;
-    background-color: rgb(152, 107, 194);
-    border: var(--borda);
-    width: 100%;
 }
 
 main > div > p{

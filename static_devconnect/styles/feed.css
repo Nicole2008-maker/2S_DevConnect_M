@@ -1,86 +1,59 @@
-main{
-   
-    min-height:100vh; /*minimo de altura da janela do dispositivo*/
+main {
+    background-color: antiquewhite;
     width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-main >div{ 
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*justify-content: space-between;*/
-    gap: 15px;
-}
-
-form{
-    /*background-color: rgb(235, 149, 230);*/
-    display: flex; /*ativa o flex*/
-    flex-direction: column;
-   /* justify-content: center;alinha na direcao do flex*/
-    align-items: center;
-    gap: 15px;
-    padding: 3%;
-}
-
-.formulario-campos{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 5px;
-    
-}
-
-.formulario-botao-azul{
- width: 100%;
-}
-
-form > p{
-    text-transform: uppercase;
-    font-size: var(--tamanho-fonte-sm);
-    color: rgb(255, 255, 255);
-}
-
-form > a, #secao-cadastro > p > a{
- color: var(--cor-verde);
- font-size: var(--tamanho-fonte-sm);
- text-decoration: none;
-
-}
-
-#secao-cadastro > p{
-color:black;
-font-size: var(--tamanho-fonte-md);
-}
-
-#secao-cadastro{
-   /*background-color: rgb(214, 135, 213);*/
-   height: 60px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.estilo-formulario{
-    max-width: 342px;
-    background-color: rgb(152, 107, 194);
-    border: var(--borda);
-    width: 100%;
-}
-
-main > div > p{
-    background-color: rgb(255, 255, 255);
-    color: rgb(108, 35, 175);
-    font-size: var(--tamanho-fonte-sm);
-}
-
-#secao-instalacao{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    margin-top: 20px;
+}
+
+.container-flex-publi {
+    background-color: rgb(129, 89, 167);
+    height: 700px;
+    width: 90%;
+    max-width: 900px;
+}
+
+#storys {
+    background-color: rgb(176, 102, 213);
+    width: 100%;
+    /*height: 300px;*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: scroll;
+    gap: 30px;
+}
+ #storys::-webkit-scrollbar{
+    width: 0; 
+ }
+
+
+.card-story {
+    /*background-color: rgb(191, 154, 218);*/
+}
+
+.card-story>button {
+    background-color: transparent;
+    border: none;
+    /* text-decoration: none;*/
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-story>button>img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.formulario-botao-azul {
+    width: 150px;
 }
