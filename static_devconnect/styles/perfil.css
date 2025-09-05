@@ -1,0 +1,82 @@
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.perfil-conteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.foto-perfil-destacada {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.perfil-detalhes {
+    display: flex;
+    gap: 35px;
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.perfil-detalhes>span {
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.perfil-acoes {
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.perfil-acoes>a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--cor-roxa);
+}
+
+.titulo-publicacoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: var(--tamanho-fonte-md);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 10%;
+    margin: 20px auto;
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+    padding-bottom: 10px;
+}
+
+#publicacoes>h2>a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-publi{
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+  padding: 20px;
+  background-color: white;
+  border: var(--borda);
+}
+

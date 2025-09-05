@@ -33,8 +33,7 @@
     /*espaço externo*/
     box-sizing: border-box;
     /*atribui ou nao espacos internos/externos e bodas no tamanho final do box*/
-    font-family: "Roboto Condensed", sans-serif;
-
+    font-family: "Roboto Condensed", sans-serif
 }
 
 body {
@@ -162,4 +161,5 @@ h1 {
         display: none;
     }
 }
+
 
