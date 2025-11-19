@@ -88,7 +88,7 @@ h1 {
 
 #labell {
     display: inline-block;
-    width: 200px;
+    width: 270px;
     color: rgb(255, 255, 255);
     background-color: rgb(123, 76, 167);
     text-align: center;
@@ -114,7 +114,7 @@ h1 {
     justify-content: space-between;
 }
 
-#Logo-mobile {
+#logo-mobile {
     display: none;
 }
 
@@ -153,7 +153,7 @@ h1 {
 /* RESPONSIVO */
 
 @media only screen and (max-width: 500px) {
-    #Logo-mobile {
+    #logo-mobile {
         display: initial;
     }
 
